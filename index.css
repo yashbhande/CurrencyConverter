@@ -1,0 +1,106 @@
+body {
+    background-color: #f0f0f0; /* Set the background color of the entire page to light gray (#f0f0f0) */
+    text-align: center; /* Center-align the text within the body */
+    font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font or a generic sans-serif font family */
+    font-size: 18px; /* Set the default font size to 18 pixels */
+    margin: 0; /* Remove margin to ensure no extra spacing outside the body */
+    padding: 0; /* Remove padding to ensure no extra spacing inside the body */
+}
+
+/* Update the header background to a gradient inspired by nature */
+nav {
+    background: linear-gradient(to right, #36b55c, #57c680); /* Apply a horizontal gradient background from green (#36b55c) to light green (#57c680) to the 'nav' element */
+    padding: 15px 0; /* Add padding to the top and bottom of the 'nav' element, and no padding on the left and right */
+    display: flex; /* Use a flexbox layout for the 'nav' element and its children */
+    justify-content: space-between; /* Distribute space evenly between child elements horizontally */
+    align-items: center; /* Vertically align child elements to the center */
+}
+
+nav ul {
+    list-style: none; /* Remove list bullets/numbers for 'ul' elements */
+    display: flex; /* Use a flexbox layout for 'ul' elements and their children */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add right margin to create spacing between list items in the navigation */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from anchor (link) elements */
+    color: #fff; /* Set the text color of links to white (#fff) */
+    transition: color 0.5s; /* Add a smooth color transition effect when hovering over links */
+}
+
+nav a:hover {
+    color: #9683e0; /* Change the link text color to a different shade of purple (#9683e0) when hovering */
+}
+
+/* Update the styling of the logo with a bolder gradient color */
+.logo {
+    font-family: 'Noto Sans', sans-serif; /* Use 'Noto Sans' font or a generic sans-serif font family */
+    font-weight: 900; /* Set the font weight to 900 (bold) */
+    font-size: 32px; /* Set the font size to 32 pixels */
+    background: linear-gradient(to right, #ff4500, #ff6b6b); /* Apply a horizontal gradient background from dark orange (#ff4500) to red (#ff6b6b) to the 'logo' element */
+    -webkit-background-clip: text; /* Clip the text to the gradient background */
+    color: transparent; /* Make the original text color transparent (hidden) */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    margin: 0 20px; /* Add margin to the left and right of the logo */
+}
+
+.container form {
+    display: flex; /* Use a flexbox layout for forms and their children */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center-align form elements horizontally */
+}
+
+.container form label {
+    font-size: 18px; /* Set the font size of labels inside forms to 18 pixels */
+    margin-top: 10px; /* Add top margin to labels for spacing */
+}
+
+.container form input[type='number'],
+select,
+label {
+    font-size: 18px; /* Set the font size of input elements, select elements, and labels inside forms to 18 pixels */
+    width: 250px; /* Set the width of input elements, select elements, and labels to 250 pixels */
+    margin-bottom: 10px; /* Add bottom margin to create spacing between form elements */
+    padding: 5px; /* Add padding to form elements */
+}
+
+.btn {
+    width: 150px; /* Set the width of elements with the 'btn' class to 150 pixels */
+    padding: 10px; /* Add padding to the elements with the 'btn' class */
+    font-size: 18px; /* Set the font size of elements with the 'btn' class to 18 pixels */
+    background-color: #9683e0; /* Set the background color of elements with the 'btn' class to a shade of purple (#9683e0) */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Add rounded corners with a radius of 5 pixels */
+    cursor: pointer; /* Change the cursor to a pointer (hand) on hover */
+    transition: background-color 0.5s; /* Add a smooth background color transition effect on hover */
+}
+
+.btn:hover {
+    background-color: #663feb; /* Change the background color of elements with the 'btn' class to a different shade of purple (#663feb) when hovering */
+}
+
+.output {
+    display: none; /* Initially hide the elements with the 'output' class */
+    margin-top: 20px; /* Add top margin to create space between hidden output elements and other content */
+}
+
+.output table {
+    width: 80%; /* Set the width of tables inside elements with the 'output' class to 80% */
+    margin: 0 auto; /* Center-align tables horizontally */
+    border-collapse: collapse; /* Collapse table borders */
+    text-align: center; /* Center-align table text */
+}
+
+.output table th, .output table td {
+    padding: 10px; /* Add padding to table header cells and table data cells */
+    border: 1px solid #ddd; /* Add a 1-pixel solid border with a light gray color (#ddd) to table cells */
+}
+
+@media (max-width: 600px) {
+    /* Add responsive styling here if needed */
+}

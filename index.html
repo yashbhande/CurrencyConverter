@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Currency Converter</div> <!-- Logo or website title -->
+        <ul>
+            <li><a href="/home">Home</a></li> <!-- Home link -->
+            <li><a href="/about">About Us</a></li> <!-- About Us link -->
+            <li><a href="/contact">Contact</a></li> <!-- Contact link -->
+        </ul>
+    </nav>
+    
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1>Welcome to Our Currency Converter</h1> <!-- Main heading -->
+        <p>Quickly convert between different currencies with ease.</p> <!-- Description -->
+        
+        <!-- Currency Conversion Form -->
+        <form action="/action.php" method="get">
+            <label for="quantity">Enter Quantity:</label> <!-- Input label -->
+            <input type="number" name="quantity" min="1" max="10"> <!-- Quantity input field -->
+            <label for="currency">Select Currency:</label> <!-- Currency selection label -->
+            <select name="currency"> <!-- Currency selection dropdown -->
+                <option value="INR">Indian Rupee</option> <!-- Option for Indian Rupee -->
+                <option value="USD">US Dollar</option> <!-- Option for US Dollar -->
+                <option value="EUR">Euro</option> <!-- Option for Euro -->
+            </select>
+            <button class="btn" type="submit">Convert</button> <!-- Conversion submit button -->
+        </form>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output">
+        <h2>Conversion Results</h2> <!-- Results heading -->
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>Currency</th> <!-- Currency column -->
+                    <th>Code</th> <!-- Currency code column -->
+                    <th>Value</th> <!-- Converted value column -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows (To be added via JavaScript) -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="main.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
